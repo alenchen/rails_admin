@@ -1,0 +1,39 @@
+zh-TW:
+  errors:
+    messages:
+      not_found: "找不到"
+      already_confirmed: "己確認"
+      not_locked: "無鎖定"
+
+  devise:
+    failure:
+      unauthenticated: '你需要登入或註冊後才能繼續'
+      unconfirmed: '你需要確認帳號後才能繼續'
+      locked: '你的帳號已被鎖定'
+      invalid: '電子郵件或密碼錯誤'
+      invalid_token: '身份驗證令牌錯誤'
+      timeout: '你的登錄有效期限已過期，請重新登錄以繼續'
+      inactive: '你的帳號還沒有啟用'
+    sessions:
+      signed_in: '登入成功'
+      signed_out: '登出失敗'
+    passwords:
+      send_instructions: '幾分鐘內你會收到一份說明如何重新設定密碼的電子郵件'
+      updated: '密碼已更新成功你的密码已成功更新。現在你已經登入'
+    confirmations:
+      send_instructions: '幾分鐘內你會收到一份說明如何確認帳號的電子郵件'
+      confirmed: '你的帳號已確認。現在你已經登入'
+    registrations:
+      signed_up: '你已經成功完成註冊。已經將一份確認電子郵件寄送到你的信箱'
+      updated: '你已成功的更新帳號'
+      destroyed: '再見！你的帳號已經被成功地取消。希望能很快的再次見到你'
+    unlocks:
+      send_instructions: '幾分鐘內你會收到一份說明如何解開帳號的電子郵件'
+      unlocked: '你的帳號已經被成功地解開。現在你已經登入'
+    mailer:
+      confirmation_instructions:
+        subject: '確認帳號說明'
+      reset_password_instructions:
+        subject: '重設密碼說明'
+      unlock_instructions:
+        subject: '帳號解鎖說明'
