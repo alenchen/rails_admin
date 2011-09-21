@@ -1,12 +1,19 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
 zh-TW:
   errors:
     messages:
+      expired: "has expired, please request a new one"
       not_found: "找不到"
       already_confirmed: "己確認"
       not_locked: "無鎖定"
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"
 
   devise:
     failure:
+      already_authenticated: 'You are already signed in.'
       unauthenticated: '你需要登入或註冊後才能繼續'
       unconfirmed: '你需要確認帳號後才能繼續'
       locked: '你的帳號已被鎖定'
@@ -16,20 +23,31 @@ zh-TW:
       inactive: '你的帳號還沒有啟用'
     sessions:
       signed_in: '登入成功'
-      signed_out: '登出失敗'
+      signed_out: '登出成功'
     passwords:
       send_instructions: '幾分鐘內你會收到一份說明如何重新設定密碼的電子郵件'
       updated: '密碼已更新成功你的密码已成功更新。現在你已經登入'
+      send_paranoid_instructions: "If your e-mail exists on our database, you will receive a password recovery link on your e-mail"
     confirmations:
       send_instructions: '幾分鐘內你會收到一份說明如何確認帳號的電子郵件'
+      send_paranoid_instructions: 'If your e-mail exists on our database, you will receive an email with instructions about how to confirm your account in a few minutes.'
       confirmed: '你的帳號已確認。現在你已經登入'
     registrations:
       signed_up: '你已經成功完成註冊。已經將一份確認電子郵件寄送到你的信箱'
+      inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
       updated: '你已成功的更新帳號'
       destroyed: '再見！你的帳號已經被成功地取消。希望能很快的再次見到你'
+      reasons:
+        inactive: 'inactive'
+        unconfirmed: 'unconfirmed'
+        locked: 'locked'
     unlocks:
       send_instructions: '幾分鐘內你會收到一份說明如何解開帳號的電子郵件'
       unlocked: '你的帳號已經被成功地解開。現在你已經登入'
+      send_paranoid_instructions: 'If your account exists, you will receive an email with instructions about how to unlock it in a few minutes.'
+    omniauth_callbacks:
+      success: '成功登入 %{kind} 帳號.'
+      failure: 'Could not authorize you from %{kind} because "%{reason}".'
     mailer:
       confirmation_instructions:
         subject: '確認帳號說明'
